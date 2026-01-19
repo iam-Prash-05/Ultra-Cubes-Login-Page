@@ -8,9 +8,39 @@
   </head>
   <body>
     <div class="main-container">
-      <button><h3>Play as a Guest</h3></button>
-      <p>or</p>
-      <button><h3>Login to Continue</h3></button>
+      <div class="front-container">
+        <button><h3>Play as a Guest</h3></button>
+        <p>or</p>
+        <button><h3>Login to Continue</h3></button>
+      </div>
+      <div class="back-container">
+        <div class="dynamic-cube-container">
+          <div class="dynamic-cube"></div>
+        </div>
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="user-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="user-email"
+              placeholder=" "
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="user-password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="user-password"
+              placeholder=" "
+              required
+            />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

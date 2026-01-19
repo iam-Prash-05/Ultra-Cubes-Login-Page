@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
   box-sizing: border-box;
   outline: black 1px solid;
 }
@@ -15,21 +15,49 @@ body {
 }
 
 .main-container {
-  padding: 10px;
   max-width: 900px;
-  border-radius: 4px;
   height: auto;
+  /* outline: none; */
+}
+.front-container {
+  padding: 10px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  /* outline: none; */
 }
 .main-container button {
   text-align: center;
   padding: 5px;
+  font-family: "Courier New", Courier, monospace;
 }
 .main-container p {
   text-align: center;
+}
+
+.back-container {
+  padding: 10px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+.dynamic-cube-container {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dynamic-cube-container .dynamic-cube {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+}
+.back-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
