@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraCubes</title>
+    <link rel="stylesheet" href="style_2.css" />
+  </head>
+  <body>
+    <main class="container">
+      <input
+        type="radio"
+        name="flip-state"
+        id="state-front"
+        class="state-radio"
+      />
+      <input
+        type="radio"
+        name="flip-state"
+        id="state-back"
+        class="state-radio"
+        checked
+      />
+      <div class="inner-container">
+        <div class="front-container">
+          <button class="front guest">Play as a Guest</button>
+          <p>or</p>
+          <label for="state-front" class="btn">Login to Continue</label>
+        </div>
+        <div class="back-container">
+          <label for="state-back" class="btn">Go Back</label>
+          <div class="cube"></div>
+          <form action="/login" method="post">
+            <div>
+              <label for="user-email">Email:</label>
+              <input type="email" id="user-email" name="email" required />
+            </div>
+            <div>
+              <label for="user-password">Password:</label>
+              <input
+                type="password"
+                id="user-password"
+                name="password"
+                required
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
